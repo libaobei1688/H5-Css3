@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			ul{list-style: none;}
+			a{text-decoration: none;}
+			.clear{clear: both;}
+			body{background:#0d1424 url(img/body-bg.jpg) no-repeat;font-family:arial,"微软雅黑"}
+			.warp{width: 980px;margin:0 auto;}
+			header{padding:34px 0 40px 0}
+			nav{height: 40px;background-color:#888;border-radius: 7px;box-shadow:0 7px 10px rgba(0,0,0,0.5);position: relative;}
+			nav .menu{display:none}
+			nav ul{float: left;padding-left: 27px;}
+			nav ul li{float:left;line-height:40px;}
+			nav ul a{color: #fff;padding-right: 30px;text-shadow: 2px 3px 7px rgba(0,0,0,1);}
+			nav form{float: right;padding: 7px 10px 6px;}
+			nav input{border-radius: 4px;width:130px;height:27px;border:none;padding-left: 10px;outline: none;transition:all 1s}
+			section{padding-top:30px}
+			section article{background-color: #fff;width:600px;padding:37px 35px 40px 35px;border-radius: 7px;float: left;box-shadow: 5px 5px 7px rgba(0,0,0,0.3);}
+			section article h2{line-height:17px;}
+			section article time{line-height: 43px;}
+			section article p{line-height: 21px;color:#656766;font-size:14px;}
+			section article .pic{font-size: 0;padding-bottom: 26px;}
+			section article video{width:100%}
+			section aside{float:right;width:240px;}
+			section aside .Sidebar{border-radius: 7px;box-shadow: 5px 5px 7px rgba(0,0,0,0.3);margin-bottom: 27px;background-color: #fff;padding:0 20px;}
+			aside .Sidebar h3{line-height: 36px;line-height: 36px;font-size:16px;color: #020300;font-weight: bold;cursor: pointer;}
+			aside .Sidebar ul li{height:30px;line-height: 30px;border-top:1px solid #eee}
+			aside .Sidebar ul li a{color:#000}
+			aside .Sidebar ul{padding-bottom: 10px;}
+			footer{text-align: center;color:#696061;line-height: 21px;padding-top: 15px;height: 82px;}
+			@media screen and (max-width:980px ) {
+				.warp{width:96%}
+				section article{width:61%;padding:37px 3.5% 40px}
+				section aside{width:24%}
+				section article .pic img{width:100%}
+				aside .Sidebar{padding:0 2%}
+			}
+			@media screen and (max-width:640px ) {
+				section article{width:auto;float: none;}
+				section aside{width:auto;float:none;margin-top:10px}
+				aside .Sidebar{padding:0 8%}
+				nav form{position:absolute;top:-44px;right:-10px;}
+				nav input{width:75px;}
+				nav input:focus{width:130px;}
+			}
+			@media screen and (max-width:480px ) {
+				nav ul{display: none;}
+				nav .menu{display: block;padding:10px 0}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="warp">
+			<header><a href="#"><img src="img/logo.png"</a></header>
+			<nav>
+				<div class="menu"><img src="img/menu.png"></div>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Themify</a></li>
+					<li><a href="#">IconDock</a></li>
+					<li><a href="#">N.Design</a></li>
+				</ul>
+				<form>
+					<input type="text" placeholder="Search" />
+				</form>
+			</nav>
+			<section>
+				<article>
+					<h2>Just a Post Title</h2>
+					<time>May 8, 2014 in Category</time>
+					<div class="pic"><img src="img/sample-image.jpg"></div>
+					<p>
+Fusce ut sem est. In eu sagittis felis. In gravida arcu ut neque ornare vitae rutrum turpis vehicula.
+ Nunc ultrices sem mollis metus rutrum non malesuada metus fermentum.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque interdum rutrum quam,
+ a pharetra est pulvinar ac. Vestibulum congue nisl magna. Ut vulputate odio id dui convallis in adipiscing libero condimentum. 
+Nunc et pharetra enim. Praesent pharetra, neque et luctus tempor, leo sapien faucibus leo, a dignissim turpis ipsum sed libero.
+ Sed sed luctus purus. Aliquam faucibus turpis at libero consectetur euismod. Nam nunc lectus, congue non egestas quis, condimentum ut arcu.
+ Nulla placerat, tortor non egestas rutrum, mi turpis adipiscing dui, et mollis turpis tortor vel orci. Cras a fringilla nunc. Suspendisse volutpat, eros congue scelerisque iaculis, magna odio sodales dui, vitae vulputate elit metus ac arcu. Mauris consequat rhoncus dolor id sagittis. Cras tortor elit, aliquet quis tincidunt eget, dignissim non tortor.
+zzSidebar</p>
+					<video src="media/Compress.MP4" controls loop poster='img/body-bg.jpg'>你的设备版本</video>
+					<!--<audio src="media/music.mp3" controls></audio>-->
+				</article>
+				<aside>
+					<div class="Sidebar">
+						<h3>Sidebar</h3>
+						<ul>
+							<li><a href="#">WordPress (3)</a></li>
+							<li><a href="#">WordPress (3)</a></li>
+							<li><a href="#">WordPress (3)</a></li>
+						</ul>
+					</div>
+					<div class="Sidebar">
+						<h3>Flickr</h3>
+					</div>					
+				</aside>
+				<div class="clear"></div>
+			</section>
+			<footer>
+				@火星时代科技有限公司<br />
+北京市海淀区杏石口路81号火星时代大厦
+			</footer>
+		</div>
+	</body>
+</html>
